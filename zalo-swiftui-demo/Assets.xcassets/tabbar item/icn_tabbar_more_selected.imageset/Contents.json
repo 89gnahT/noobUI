@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "ui40_icn_tabbar_more_selected.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
