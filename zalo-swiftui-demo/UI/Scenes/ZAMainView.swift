@@ -54,7 +54,7 @@ struct ZAMainView: View {
             }
             .padding(.leading, 0.11)
             .navigationBarHidden(model.hideTabNavigation)
-            .navigationBarItems(trailing: model.tabNavigationBarTrailingItems)
+//            .navigationBarItems(trailing: model.tabNavigationBarTrailingItems)
             .navigationBarTitle(model.tabNavigationTitle, displayMode: .inline)
             .environmentObject(model)
             //            }

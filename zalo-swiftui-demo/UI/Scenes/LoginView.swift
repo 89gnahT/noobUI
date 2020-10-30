@@ -46,17 +46,6 @@ struct LoginView: View {
                 }
                 .padding()
                 
-                HStack {
-                    NavigationLink(destination: ForgotPasswordView()) {
-                        Text("Lấy lại mật khẩu")
-                            .foregroundColor(.bl300)
-                            .padding()
-                    }
-                    Spacer()
-                }
-                
-
-
                 if (self.status != .inactive || self.status != .pending) {
 
                     HStack{
@@ -72,6 +61,15 @@ struct LoginView: View {
                                     .padding()
                         Spacer()
                     }
+                }
+                
+                HStack {
+                    NavigationLink(destination: ForgotPasswordView()) {
+                        Text("Lấy lại mật khẩu")
+                            .foregroundColor(.bl300)
+                            .padding()
+                    }
+                    Spacer()
                 }
                 
                 Button(action: {

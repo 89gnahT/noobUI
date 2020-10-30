@@ -16,6 +16,6 @@ class MainViewPresentationData: ObservableObject {
     
     @Published var tabNavigationTitle: LocalizedStringKey = ""
     
-    @Published var tabNavigationBarTrailingItems: AnyView = .init(EmptyView())
+//    @Published var tabNavigationBarTrailingItems: AnyView = .init(EmptyView())
     
 }
