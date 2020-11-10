@@ -11,7 +11,7 @@ import Combine
 protocol Network: AnyObject {
 
     @discardableResult
-    func load<T: Decodable>(_ resource: Resource<T>) -> AnyPublisher<Result<T, NetworkError>, Never>
+    func request<T: Decodable>(_ resource: Request<T>) -> AnyPublisher<Result<T, NetworkError>, Never>
 }
 
 enum NetworkError: Error {

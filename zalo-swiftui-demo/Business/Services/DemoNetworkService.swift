@@ -10,18 +10,18 @@ import Combine
 
 class DemoNetworkService {
     
-    func load(_ cred: Resource<LoginErrorCode>) -> AnyPublisher<Result<LoginErrorCode, NetworkError>, Never> {
+    func load(_ cred: Request<LoginErrorCode>) -> AnyPublisher<Result<LoginErrorCode, NetworkError>, Never> {
         Future<Result<LoginErrorCode, NetworkError>, Never> { promise in
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-//                promise(.success(.success(.successful)))
-                promise(.success(.success(LoginErrorCode(rawValue: LoginErrorCode.allCases.randomElement()!.rawValue )!)))
+                promise(.success(.success(.successful)))
+//                promise(.success(.success(LoginErrorCode(rawValue: LoginErrorCode.allCases.randomElement()!.rawValue )!)))
 //                promise(.success(.failure(.invalidRequest)))
             }
         }
         .eraseToAnyPublisher()
     }
     
-    func load(_ cred: Resource<LogoutErrorCode>) -> AnyPublisher<Result<LogoutErrorCode, NetworkError>, Never> {
+    func load(_ cred: Request<LogoutErrorCode>) -> AnyPublisher<Result<LogoutErrorCode, NetworkError>, Never> {
         Future<Result<LogoutErrorCode, NetworkError>, Never> { promise in
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 promise(.success(.success(.successful)))

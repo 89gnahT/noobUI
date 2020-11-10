@@ -11,7 +11,7 @@ struct MessageView: View {
     
     @ObservedObject var messageViewModel = MessageViewModel()
     
-    @EnvironmentObject var presentationData: MainViewPresentationData
+//    @EnvironmentObject var presentationData: MainViewPresentationData
     
     var body: some View {
         Group {
@@ -28,8 +28,8 @@ struct MessageView: View {
             }
         }
         .onAppear {
-            self.presentationData.hideTabNavigation = false
-            self.presentationData.tabNavigationTitle = "Messages"
+//            self.presentationData.hideTabNavigation = false
+//            self.presentationData.tabNavigationTitle = "Messages"
 //            self.presentationData.tabNavigationBarTrailingItems = .init(Image("icnOnboardEdit"))
         }
     }

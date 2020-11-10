@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,11 +18,17 @@
 		725032632546AFBC00D87F99 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725032622546AFBC00D87F99 /* NetworkService.swift */; };
 		725032682546B16700D87F99 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725032672546B16700D87F99 /* Credential.swift */; };
 		725032732546CCA800D87F99 /* LoginErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725032722546CCA800D87F99 /* LoginErrorCode.swift */; };
-		7250327D2546E2F900D87F99 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250327C2546E2F900D87F99 /* Resource.swift */; };
+		7250327D2546E2F900D87F99 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7250327C2546E2F900D87F99 /* Request.swift */; };
 		725F5397254BE14A003C8118 /* MockMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725F5396254BE14A003C8118 /* MockMessageService.swift */; };
 		727568B7253E940F00E6C603 /* CGFloat+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727568B6253E940F00E6C603 /* CGFloat+Additions.swift */; };
 		727568C8253EC35100E6C603 /* ZAHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727568C7253EC35100E6C603 /* ZAHostingController.swift */; };
-		729589E32549187B002AFE57 /* Resource+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729589E22549187B002AFE57 /* Resource+Additions.swift */; };
+		72802F60254FB21A007CF268 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 72802F5F254FB21A007CF268 /* Alamofire */; };
+		72802F862550F5BC007CF268 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72802F852550F5BC007CF268 /* ChatViewModel.swift */; };
+		7294EF0325550303001C2556 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294EF0225550303001C2556 /* ChatMessage.swift */; };
+		7294EF0825550C32001C2556 /* ZIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294EF0725550C32001C2556 /* ZIntroView.swift */; };
+		7294EF0D25552618001C2556 /* ChatCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294EF0C25552618001C2556 /* ChatCellView.swift */; };
+		7294EF1225552662001C2556 /* ZChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294EF1125552662001C2556 /* ZChatView.swift */; };
+		729589E32549187B002AFE57 /* Request+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729589E22549187B002AFE57 /* Request+Additions.swift */; };
 		729589E9254923C7002AFE57 /* LogoutErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729589E8254923C7002AFE57 /* LogoutErrorCode.swift */; };
 		729589F3254928E0002AFE57 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729589F2254928E0002AFE57 /* Authentication.swift */; };
 		729589F825492918002AFE57 /* DemoNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729589F725492918002AFE57 /* DemoNetworkService.swift */; };
@@ -33,7 +39,13 @@
 		72958A6E254AD466002AFE57 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72958A6D254AD466002AFE57 /* Session.swift */; };
 		7295CD642542718800B2113D /* View+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7295CD632542718800B2113D /* View+Additions.swift */; };
 		7295CD69254273E900B2113D /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7295CD68254273E900B2113D /* IntroViewModel.swift */; };
-		72CAFB1825417D7F00A90756 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CAFB1725417D7F00A90756 /* AuthTextField.swift */; };
+		72AEEED125515F2000EEB8D3 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AEEED025515F2000EEB8D3 /* SplitViewController.swift */; };
+		72AEEED625515F5B00EEB8D3 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AEEED525515F5B00EEB8D3 /* UIViewController+Additions.swift */; };
+		72AEEEDB25515FAA00EEB8D3 /* EmptyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AEEEDA25515FAA00EEB8D3 /* EmptyDetailViewController.swift */; };
+		72AEEEE02551639600EEB8D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AEEEDF2551639600EEB8D3 /* MainView.swift */; };
+		72B6953A25528A0900999007 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B6953925528A0900999007 /* IntroViewController.swift */; };
+		72B695422552A44700999007 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B695412552A44700999007 /* PasswordTextField.swift */; };
+		72B695472552ABB200999007 /* WrappableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B695462552ABB200999007 /* WrappableTextField.swift */; };
 		72D8DA792539476B00606877 /* IntroItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8DA782539476B00606877 /* IntroItemView.swift */; };
 		72D8DA802539517A00606877 /* ZAButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8DA7F2539517A00606877 /* ZAButtonStyle.swift */; };
 		72D8DA85253951B100606877 /* Color+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8DA84253951B100606877 /* Color+Additions.swift */; };
@@ -100,11 +112,16 @@
 		725032622546AFBC00D87F99 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		725032672546B16700D87F99 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		725032722546CCA800D87F99 /* LoginErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginErrorCode.swift; sourceTree = "<group>"; };
-		7250327C2546E2F900D87F99 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		7250327C2546E2F900D87F99 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		725F5396254BE14A003C8118 /* MockMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessageService.swift; sourceTree = "<group>"; };
 		727568B6253E940F00E6C603 /* CGFloat+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Additions.swift"; sourceTree = "<group>"; };
 		727568C7253EC35100E6C603 /* ZAHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAHostingController.swift; sourceTree = "<group>"; };
-		729589E22549187B002AFE57 /* Resource+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+Additions.swift"; sourceTree = "<group>"; };
+		72802F852550F5BC007CF268 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		7294EF0225550303001C2556 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		7294EF0725550C32001C2556 /* ZIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIntroView.swift; sourceTree = "<group>"; };
+		7294EF0C25552618001C2556 /* ChatCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellView.swift; sourceTree = "<group>"; };
+		7294EF1125552662001C2556 /* ZChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZChatView.swift; sourceTree = "<group>"; };
+		729589E22549187B002AFE57 /* Request+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Additions.swift"; sourceTree = "<group>"; };
 		729589E8254923C7002AFE57 /* LogoutErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutErrorCode.swift; sourceTree = "<group>"; };
 		729589F2254928E0002AFE57 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		729589F725492918002AFE57 /* DemoNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoNetworkService.swift; sourceTree = "<group>"; };
@@ -115,7 +132,13 @@
 		72958A6D254AD466002AFE57 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		7295CD632542718800B2113D /* View+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Additions.swift"; sourceTree = "<group>"; };
 		7295CD68254273E900B2113D /* IntroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModel.swift; sourceTree = "<group>"; };
-		72CAFB1725417D7F00A90756 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
+		72AEEED025515F2000EEB8D3 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		72AEEED525515F5B00EEB8D3 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		72AEEEDA25515FAA00EEB8D3 /* EmptyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailViewController.swift; sourceTree = "<group>"; };
+		72AEEEDF2551639600EEB8D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		72B6953925528A0900999007 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		72B695412552A44700999007 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		72B695462552ABB200999007 /* WrappableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappableTextField.swift; sourceTree = "<group>"; };
 		72D8DA782539476B00606877 /* IntroItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroItemView.swift; sourceTree = "<group>"; };
 		72D8DA7F2539517A00606877 /* ZAButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAButtonStyle.swift; sourceTree = "<group>"; };
 		72D8DA84253951B100606877 /* Color+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Additions.swift"; sourceTree = "<group>"; };
@@ -164,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72802F60254FB21A007CF268 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +255,7 @@
 				72958A0225492923002AFE57 /* Network.swift */,
 				725032622546AFBC00D87F99 /* NetworkService.swift */,
 				729589F725492918002AFE57 /* DemoNetworkService.swift */,
-				7250327C2546E2F900D87F99 /* Resource.swift */,
+				7250327C2546E2F900D87F99 /* Request.swift */,
 				725F5396254BE14A003C8118 /* MockMessageService.swift */,
 			);
 			name = Network;
@@ -252,7 +276,7 @@
 			children = (
 				7250324825469A9300D87F99 /* Data+JSON.swift */,
 				7250325D25469F8600D87F99 /* Encodable+JSON.swift */,
-				729589E22549187B002AFE57 /* Resource+Additions.swift */,
+				729589E22549187B002AFE57 /* Request+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,7 +325,8 @@
 		72CAFB1625417D4B00A90756 /* TextField */ = {
 			isa = PBXGroup;
 			children = (
-				72CAFB1725417D7F00A90756 /* AuthTextField.swift */,
+				72B695412552A44700999007 /* PasswordTextField.swift */,
+				72B695462552ABB200999007 /* WrappableTextField.swift */,
 			);
 			name = TextField;
 			sourceTree = "<group>";
@@ -466,6 +491,7 @@
 				727568B6253E940F00E6C603 /* CGFloat+Additions.swift */,
 				72144F67253EE7280023EF00 /* UIApplication+Additions.swift */,
 				7295CD632542718800B2113D /* View+Additions.swift */,
+				72AEEED525515F5B00EEB8D3 /* UIViewController+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -531,6 +557,8 @@
 				72456D8A2538C21C00F4DA8D /* IntroView.swift */,
 				72D8DA782539476B00606877 /* IntroItemView.swift */,
 				7295CD68254273E900B2113D /* IntroViewModel.swift */,
+				72B6953925528A0900999007 /* IntroViewController.swift */,
+				7294EF0725550C32001C2556 /* ZIntroView.swift */,
 			);
 			name = Intro;
 			sourceTree = "<group>";
@@ -558,6 +586,9 @@
 			children = (
 				72F96FE52538B6AA003AFF3E /* ZAMainView.swift */,
 				72F970062538B842003AFF3E /* MainViewPresentationData.swift */,
+				72AEEED025515F2000EEB8D3 /* SplitViewController.swift */,
+				72AEEEDA25515FAA00EEB8D3 /* EmptyDetailViewController.swift */,
+				72AEEEDF2551639600EEB8D3 /* MainView.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -566,6 +597,10 @@
 			isa = PBXGroup;
 			children = (
 				72F96FFE2538B768003AFF3E /* ChatView.swift */,
+				72802F852550F5BC007CF268 /* ChatViewModel.swift */,
+				7294EF0225550303001C2556 /* ChatMessage.swift */,
+				7294EF0C25552618001C2556 /* ChatCellView.swift */,
+				7294EF1125552662001C2556 /* ZChatView.swift */,
 			);
 			name = Chat;
 			sourceTree = "<group>";
@@ -586,6 +621,9 @@
 			dependencies = (
 			);
 			name = "zalo-swiftui-demo";
+			packageProductDependencies = (
+				72802F5F254FB21A007CF268 /* Alamofire */,
+			);
 			productName = "zalo-swiftui-demo";
 			productReference = 72F96F882538B0CA003AFF3E /* zalo-swiftui-demo.app */;
 			productType = "com.apple.product-type.application";
@@ -657,6 +695,9 @@
 				Base,
 			);
 			mainGroup = 72F96F7F2538B0CA003AFF3E;
+			packageReferences = (
+				72802F5E254FB21A007CF268 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 72F96F892538B0CA003AFF3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -701,6 +742,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72D8DABA25398B8600606877 /* FAQView.swift in Sources */,
+				72AEEEDB25515FAA00EEB8D3 /* EmptyDetailViewController.swift in Sources */,
 				72F96FF12538B6F3003AFF3E /* MessageViewModel.swift in Sources */,
 				72D9427E253D664C00F3A5DE /* LoginViewModel.swift in Sources */,
 				7250325E25469F8600D87F99 /* Encodable+JSON.swift in Sources */,
@@ -708,14 +750,17 @@
 				725032682546B16700D87F99 /* Credential.swift in Sources */,
 				72D8DAAB2539788500606877 /* LoginView.swift in Sources */,
 				72D8DA85253951B100606877 /* Color+Additions.swift in Sources */,
+				72B6953A25528A0900999007 /* IntroViewController.swift in Sources */,
+				72AEEED625515F5B00EEB8D3 /* UIViewController+Additions.swift in Sources */,
 				729589F825492918002AFE57 /* DemoNetworkService.swift in Sources */,
-				72CAFB1825417D7F00A90756 /* AuthTextField.swift in Sources */,
 				72F9701E2538BA47003AFF3E /* MoreView.swift in Sources */,
+				72B695422552A44700999007 /* PasswordTextField.swift in Sources */,
 				7295CD69254273E900B2113D /* IntroViewModel.swift in Sources */,
 				72F96FCF2538B2B5003AFF3E /* RootViewModel.swift in Sources */,
 				72F970292538BC2A003AFF3E /* AuthManager.swift in Sources */,
 				727568B7253E940F00E6C603 /* CGFloat+Additions.swift in Sources */,
 				725032632546AFBC00D87F99 /* NetworkService.swift in Sources */,
+				7294EF0D25552618001C2556 /* ChatCellView.swift in Sources */,
 				72958A66254AA164002AFE57 /* ActivityIndicator.swift in Sources */,
 				72D8DA792539476B00606877 /* IntroItemView.swift in Sources */,
 				7295CD642542718800B2113D /* View+Additions.swift in Sources */,
@@ -725,6 +770,7 @@
 				72F970112538BA0B003AFF3E /* GroupView.swift in Sources */,
 				72F96F8C2538B0CA003AFF3E /* AppDelegate.swift in Sources */,
 				72F970072538B842003AFF3E /* MainViewPresentationData.swift in Sources */,
+				7294EF0325550303001C2556 /* ChatMessage.swift in Sources */,
 				72F96FEB2538B6CB003AFF3E /* MessageView.swift in Sources */,
 				72F96FFF2538B768003AFF3E /* ChatView.swift in Sources */,
 				72D8DAC225398B9E00606877 /* ForgotPasswordView.swift in Sources */,
@@ -734,10 +780,14 @@
 				72F9702F2538BCBC003AFF3E /* RootNavigator.swift in Sources */,
 				725032322546965400D87F99 /* AuthenticationService.swift in Sources */,
 				72456D8B2538C21C00F4DA8D /* IntroView.swift in Sources */,
+				7294EF1225552662001C2556 /* ZChatView.swift in Sources */,
+				7294EF0825550C32001C2556 /* ZIntroView.swift in Sources */,
 				72958A3F25495C5F002AFE57 /* User.swift in Sources */,
+				72AEEED125515F2000EEB8D3 /* SplitViewController.swift in Sources */,
 				72F96FF92538B740003AFF3E /* MessageCellView.swift in Sources */,
 				7250323B2546981700D87F99 /* DataStorage.swift in Sources */,
 				72D94283253D8F6B00F3A5DE /* ZALoginManager.swift in Sources */,
+				72802F862550F5BC007CF268 /* ChatViewModel.swift in Sources */,
 				72D8DAB32539789600606877 /* RegisterView.swift in Sources */,
 				72F96F8E2538B0CA003AFF3E /* SceneDelegate.swift in Sources */,
 				725032732546CCA800D87F99 /* LoginErrorCode.swift in Sources */,
@@ -745,16 +795,18 @@
 				72D8DA802539517A00606877 /* ZAButtonStyle.swift in Sources */,
 				72D8DA9D2539579700606877 /* PageControl.swift in Sources */,
 				72144F68253EE7280023EF00 /* UIApplication+Additions.swift in Sources */,
-				7250327D2546E2F900D87F99 /* Resource.swift in Sources */,
+				7250327D2546E2F900D87F99 /* Request.swift in Sources */,
 				729589F3254928E0002AFE57 /* Authentication.swift in Sources */,
 				72F970192538BA3A003AFF3E /* SocialView.swift in Sources */,
-				729589E32549187B002AFE57 /* Resource+Additions.swift in Sources */,
+				729589E32549187B002AFE57 /* Request+Additions.swift in Sources */,
+				72B695472552ABB200999007 /* WrappableTextField.swift in Sources */,
 				7250324925469A9300D87F99 /* Data+JSON.swift in Sources */,
 				729589E9254923C7002AFE57 /* LogoutErrorCode.swift in Sources */,
 				72F9700C2538B9E1003AFF3E /* ContactView.swift in Sources */,
 				725F5397254BE14A003C8118 /* MockMessageService.swift in Sources */,
 				72958A0325492923002AFE57 /* Network.swift in Sources */,
 				72D8DA902539574500606877 /* PageViewController.swift in Sources */,
+				72AEEEE02551639600EEB8D3 /* MainView.swift in Sources */,
 				72F96FE62538B6AA003AFF3E /* ZAMainView.swift in Sources */,
 				72F96F902538B0CA003AFF3E /* ContentView.swift in Sources */,
 			);
@@ -1087,6 +1139,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72802F5E254FB21A007CF268 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72802F5F254FB21A007CF268 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72802F5E254FB21A007CF268 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72F96F802538B0CA003AFF3E /* Project object */;
 }

@@ -18,6 +18,6 @@ struct Token: Codable, Equatable {
 
 struct Session: Codable, Equatable {
     private(set) var token: Token
-    private(set) var id: String
+    private(set) var id: UUID
 
 }

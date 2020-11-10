@@ -7,11 +7,12 @@
 
 import Foundation
 
-class User {
+class User: ObservableObject {
     
     static let currentUser: User = User()
     
-    var id = "1998"
+    var id = UUID()
+    var name = "Thang Nguyen"
         
     var accountDataStorage: AccountDataStorage = AccountDataStorage.shared
     

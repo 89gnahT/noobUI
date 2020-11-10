@@ -17,7 +17,7 @@ class NetworkService: Network {
     }
     
     @discardableResult
-    func load<T>(_ resource: Resource<T>) -> AnyPublisher<Result<T, NetworkError>, Never> {
+    func request<T>(_ resource: Request<T>) -> AnyPublisher<Result<T, NetworkError>, Never> {
         guard let request = resource.request else {
             return Just(.failure(.invalidRequest))
                 .catch{ _ in

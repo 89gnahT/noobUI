@@ -1,5 +1,5 @@
 //
-//  Resource.swift
+//  Request.swift
 //  zalo-swiftui-demo
 //
 //  Created by Thang Nguyen on 10/26/20.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Resource<T: Decodable> {
+struct Request<T: Decodable> {
     let url: URL
     let parameters: [String: CustomStringConvertible]
     var request: URLRequest? {

@@ -18,14 +18,14 @@ class MessageMock: ObservableObject {
     
     @Published var messages = [Message]()
     
-    private func recentMessages() -> Resource<[Message]> {
+    private func recentMessages() -> Request<[Message]> {
         let url = URL(string: "https://jsonplaceholder.typicode.com/comments")!
-        return Resource<[Message]>(url: url)
+        return Request<[Message]>(url: url)
     }
     
     func loadRecentMessages() -> AnyPublisher<Result<[Message], Error>, Never> {
         return self.networkService
-            .load(self.recentMessages())
+            .request(self.recentMessages())
             .map({ (result: Result<[Message], NetworkError>) -> Result<[Message], Error> in
                 switch result {
                 case .success(let messages):

@@ -34,6 +34,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = ZAHostingController(rootView: rootView)
+//            let rootVC = UINavigationController(rootViewController: IntroViewController())
+//            rootVC.setNavigationBarHidden(true, animated: false)
+//            window.rootViewController = rootVC
             self.window = window
             window.makeKeyAndVisible()
         }

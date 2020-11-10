@@ -9,7 +9,7 @@ import SwiftUI
 
 struct IntroView: View {
     
-//    @EnvironmentObject var navigator: RootNavigator
+    //    @EnvironmentObject var navigator: RootNavigator
     
     @State var selection: Int? = nil
     
@@ -18,8 +18,8 @@ struct IntroView: View {
     @State private var initialIntroItemIndex = 0
     
     //    @State private var hideNavBar: Bool = false
-//    @State private var offset: CGFloat = 0
-//    @State private var width: CGFloat = 0
+    //    @State private var offset: CGFloat = 0
+    //    @State private var width: CGFloat = 0
     
     var body: some View {
         NavigationView {
@@ -31,11 +31,15 @@ struct IntroView: View {
                     .opacity(self.initialIntroItemIndex == 4 ? 0 : 1)
                 VStack {
                     ZStack(alignment: .top) {
-                        Image("background_city")
-                            .resizable()
-                            .renderingMode(.original)
-                            .scaledToFit()
-                            .frame(maxWidth: .adaptiveContentWidth, alignment: .top)
+                        VStack {
+                            Image("background_city")
+                                .resizable()
+                                .renderingMode(.original)
+                                .scaledToFit()
+                                .frame(maxWidth: .adaptiveContentWidth, alignment: .top)
+                            Spacer()
+                        }
+
                         Group {
                             if #available(iOS 14.0, *) {
                                 TabView(selection: $initialIntroItemIndex) {
@@ -78,9 +82,9 @@ struct IntroView: View {
                     
                     NavigationLink(destination:
                                     RegisterView()
-                                    /*.environmentObject(self.navigator)*/,
+                                   /*.environmentObject(self.navigator)*/,
                                    tag: 2, selection: self.$selection) {
-                        
+
                     }
                     
                     Button("Đăng ký") {
@@ -92,31 +96,31 @@ struct IntroView: View {
                 .padding(.bottom)
                 
                 
-//                HStack(spacing: 40) {
-//                    Group {
-//                        Text("Tiếng Việt")
-//                            .overlay(UnderlineButton(buttonAction: {
-//                                self.introViewModel.changeLanguage("vi")
-//                            }, offset: self.$offset, width: self.$width))
-//                        Text("English")
-//                            .overlay(UnderlineButton(buttonAction: {
-//                                self.introViewModel.changeLanguage("en")
-//                            }, offset: self.$offset, width: self.$width))
-//                    }
-//                    .font(.custom("SFProDisplay-Regular", size: 14))
-//                }
-//                .coordinateSpace(name: "container")
-//                .padding(.bottom, 10)
-//                .overlay(
-//                    Rectangle()
-//                        .frame(height: 2)
-//                        .frame(width: self.width)
-//                        .padding(.leading, self.offset),
-//                    alignment: .bottomLeading)
-//                .animation(.spring())
-//                .padding(.top)
+                //                HStack(spacing: 40) {
+                //                    Group {
+                //                        Text("Tiếng Việt")
+                //                            .overlay(UnderlineButton(buttonAction: {
+                //                                self.introViewModel.changeLanguage("vi")
+                //                            }, offset: self.$offset, width: self.$width))
+                //                        Text("English")
+                //                            .overlay(UnderlineButton(buttonAction: {
+                //                                self.introViewModel.changeLanguage("en")
+                //                            }, offset: self.$offset, width: self.$width))
+                //                    }
+                //                    .font(.custom("SFProDisplay-Regular", size: 14))
+                //                }
+                //                .coordinateSpace(name: "container")
+                //                .padding(.bottom, 10)
+                //                .overlay(
+                //                    Rectangle()
+                //                        .frame(height: 2)
+                //                        .frame(width: self.width)
+                //                        .padding(.leading, self.offset),
+                //                    alignment: .bottomLeading)
+                //                .animation(.spring())
+                //                .padding(.top)
             }
-            .frame(maxHeight: 896, alignment: .center)
+            .frame(maxHeight: 896, alignment: .top)
             .padding(.bottom, 5)
             //            .navigationBarHidden(self.hideNavBar)
             //            .onAppear {
@@ -159,8 +163,8 @@ struct IntroView: View {
 
 struct IntroView_Previews: PreviewProvider {
     static var previews: some View {
-        //        IntroView()
-        Text("IntroView")
+        IntroView()
+        //        Text("IntroView")
         
     }
 }

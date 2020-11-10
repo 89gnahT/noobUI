@@ -17,9 +17,13 @@ struct ZARootView: View {
             switch self.authService.authState {
             case .loggedOut:
                 IntroView()
+//                ZIntroView()
 //                    .environmentObject(self.navigator)
             case .loggedIn:
-                ZAMainView()
+//                ZAMainView()
+//                    .environmentObject(self.authService)
+                MainView()
+                    .edgesIgnoringSafeArea(.all)
                     .environmentObject(self.authService)
             }
         }

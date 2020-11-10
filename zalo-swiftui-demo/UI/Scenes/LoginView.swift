@@ -34,19 +34,29 @@ struct LoginView: View {
                 
                 VStack {
                     HStack {
-                        TextField(self.loginViewModel.idPlaceholderText, text: self.$loginViewModel.idText)
+                        TextField(self.loginViewModel.idPlaceholderText, text: self.$loginViewModel.idText, onEditingChanged: { text in
+                            if self.status != .inactive {
+                                self.status = .inactive
+                            }
+                        })
                             .autocapitalization(UITextAutocapitalizationType.none)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                     }
                     HStack {
-                        SecureField(self.loginViewModel.passwordPlaceholderText, text: self.$loginViewModel.passwordText)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                        PasswordTextField(placeholder: self.loginViewModel.passwordPlaceholderText, onEditingChanged: { text in
+                            if self.status != .inactive {
+                                self.status = .inactive
+                            }
+                            self.loginViewModel.passwordText = text
+                        })
+//                        SecureField(self.loginViewModel.passwordPlaceholderText, text: self.$loginViewModel.passwordText)
+//                            .textFieldStyle(RoundedBorderTextFieldStyle())
                     }
 
                 }
                 .padding()
                 
-                if (self.status != .inactive || self.status != .pending) {
+                if (self.status != .inactive && self.status != .pending) {
 
                     HStack{
                         Group {
